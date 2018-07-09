@@ -1,0 +1,32 @@
+<tr>
+  <th scope="col">#</th>
+  <th scope="col">Libelle</th>
+  <th scope="col">Ville</th>
+  <th scope="col">code postal</th>
+</tr>
+<table class="table" *ngFor="let col1 of collection | async ">
+  <thead>
+
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>{{col1.libelle}}</td>
+      <td>{{col1.ville}}</td>
+      <td>{{col1.code_postal}}</td>
+    </tr>
+
+    <!-- <button class="btn btn-primary"
+    click)="onRechercher()">afficher</button>
+    <button class="btn btn-primary"
+     (click)="onTrier()">trier</button>
+      <button class="btn btn-primary"
+     (click)="onPaginer()">paginer</button> -->
+
+
+
+
+  </tbody>
+</table>
+<button class="btn btn-primary" (click)="onAfficher()">afficher</button>
+
